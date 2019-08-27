@@ -1,0 +1,13 @@
+div {
+    border: 3px purple solid;
+    background-color: grey;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 5px;
+}
+div:hover{
+    color: white;
+    background-color: red;
+    border-radius: 25px;
+    border: red;
+}
