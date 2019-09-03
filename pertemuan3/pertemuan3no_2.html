@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        function bikinTable(brs,klm) {
+            document.write("<table border='1px'>");
+            for (let x = 1; x <= brs; x++) {
+                document.write('<tr>');
+                for (let y = 1; y <= klm; y++) {
+                    if ((x+y)%2==0) {
+                        document.write("<td style='background-color:blue;'");
+                    } else {
+                        document.write("<td style='background-color:red;'");
+                        document.write("("+x+","+y+")");
+                        document.write("</td>");
+                    }
+                    document.write("</tr>");
+                }   
+                document.write("<td>");
+            } 
+            document.write("</table>");
+        }
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        baris = prompt("masukkan jumlah baris");
+        kolom = prompt("masukkan jumlah kolom");
+        bikinTable(baris, kolom);
+    </script>
+</body>
+</html>

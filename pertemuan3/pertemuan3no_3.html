@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function cetak(titik) {
+            isi = titik.innerHTML;
+            document.write("innerHTML: "+ isi + "<br>");
+            isi2 = titik.nodeName;
+            document.write("nodeName: "+ isi2 + "<br>");
+            isi3 = titik.nodeType;
+            document.write("nodeType: "+ isi3 + "<br>");
+            isi4 = titik.nodeValue;
+            document.write("nodeValue: "+ isi4 + "<br>");
+        }
+    </script>
+</head>
+<body>
+    <ul id="buah">
+        <li>Nama buah</li>
+        <li><a href="jeruk.html">Jeruk</a></li>
+        <li><a href="mangga.htm">Mangga</a></li>
+        <li><a href="apel.html">Apel</a></li>
+    </ul>
+    <script>
+        induk = document.getElementById("buah").getElementsByTagName("a");
+        document.write("<p>Jumlah child = "+ induk.length + "</p>");
+        for (let x = 0; x < induk.length; x++) {
+            anak = induk[x];
+            document.write("<p>----------- "+x+"---------</p>");
+            cetak(anak);
+            document.write(anak.attributes[0].name+"=");
+            document.write(anak.getAttribute("href")+"<br>");
+        }
+    </script>
+</body>
+</html>
