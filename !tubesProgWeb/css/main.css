@@ -1,0 +1,11 @@
+#menu{
+    text-decoration: none;
+    
+}
+#menu:hover{
+    color: black;
+}
+.custom-restricted-width {
+    display: inline-block;
+    float: left;
+}
