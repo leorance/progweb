@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function sentuh() {
+            document.getElementById('pic').src="orang.png";
+            document.getElementById('text').innerHTML="Jangan perdagangkan orang hutan";
+        }
+        function balik() {
+            document.getElementById('pic').src="orang1.jpg";
+            document.getElementById("text").innerHTML="Orang hutan tercancam punah";
+        }
+    </script>
+</head>
+<body>
+    <div style="border: solid 2px black; width: 600px; height: 200px; padding: 20px; background: pink">
+        <img src="orang.png" id="pic" style="float: left; border:solid 2px red; width: 200px;" onmouseover="sentuh()" onmouseout="balik()">
+        <h1 align="center" style="font-family: verdana;"><br>Orangutan!</h1>
+        <h2 id="text" align="center">Orang utan Tercancam punah</h2>
+    </div>
+</body>
+</html>

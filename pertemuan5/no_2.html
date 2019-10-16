@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+  $(".col").click(function(){
+    $("p").css("background-color", "yellow");
+  });
+  $(".bin").click(function () {
+    $("p").css("border", "3px solid blue");
+  });
+  $(".big").click(function () {
+    $("p").css("font-size", "100px");
+  })
+});
+</script>
+</head>
+<body>
+<p>Leo</p>
+<button class="col">Kuning</button>
+<button class="bin">Bingkai</button>
+<button class="big">Besar</button>
+</body>
+</html>

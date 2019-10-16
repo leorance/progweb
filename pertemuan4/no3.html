@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+        <script>
+            function message() {
+                color = document.getElementById('x').value;
+                // document.getElementById('x').style.background = color
+                var el = document.getElementById("x");
+                if (color == "merah") {
+                    el.style.background = "red";
+                } else if (color == "kuning") {
+                    el.style.background = "yellow";
+                } else {
+                    el.style.background = "white";
+                }
+            }
+            </script>
+    Masukkan warna : <input type="text" onkeyup="message()" id="x">
+</body>
+</html>

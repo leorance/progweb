@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    </script>
+</head>
+<body onload="Time();">
+    <h1>Jam berapa</h1>
+    <ul id="myList">
+        <li id="jam"></li>
+    </ul>
+    <button onclick="add()">Tambah</button>&nbsp;&nbsp;&nbsp;<button onclick="remove()">Hapus</button>
+    <script>
+            function add() {
+                var node = document.createElement("LI");
+                var textnode = document.createTextNode(Time());
+                node.appendChild(textnode);
+                document.getElementById("myList").appendChild(node);
+            }
+            function remove() {
+                var select = document.getElementById("myList");
+                select.removeChild(select.lastChild);
+            }
+            function Time() {
+                var date = new Date();
+                var h = date.getHours(); // 0 - 23
+                var m = date.getMinutes(); // 0 - 59
+                var s = date.getSeconds(); // 0 - 59
+                var time = h + " : " + m + " : " + s;
+                return document.getElementById("jam").innerHTML = time;
+            }
+    </script>
+</body>
+</html>

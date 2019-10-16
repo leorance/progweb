@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide(1000);
+  });
+  $("#show").click(function(){
+    $("p").fadeIn(500);
+    $("p").show(1000);
+  });
+});
+</script>
+</head>
+<body>
+    <button id="hide">Sembunyikan</button>
+    <button id="show">Tampilkan</button>
+    <p style="background-color: aqua; height: 100px; width:250px;">Mari bermain JQuery</p>
+
+</body>
+</html>

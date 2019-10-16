@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <script>
+        $("document").ready(function () {
+            $("p").click(function () {
+                $("img").slideToggle();
+            })
+        });
+    </script>
+    <div style="display:inline-block; background-color:aquamarine; padding: 10px;">
+        <img src="misel.jpg" alt="" style="width: 400px;"><br>
+        <center>
+        <p style="width:400px;">Click untuk sembunyikan / tampilkan gambar</p>
+    </center>
+    </div>
+</body>
+</html>

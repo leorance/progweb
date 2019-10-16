@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <script>
+        $("document").ready(function () {
+            $("#b1").click(function () {
+                x = document.getElementById("isi").value
+                $("p").html(x);
+                document.getElementById("isi").value="";
+            });
+            $("#b2").click(function () {
+                x = document.getElementById("seb").value
+                $("p").before(x);
+                document.getElementById("seb").value="";
+            });
+            $("#b3").click(function () {
+                x = document.getElementById("dep").value
+                $("p").prepend(x);
+                document.getElementById("dep").value="";
+            });
+            $("#b4").click(function () {
+                x = document.getElementById("bel").value
+                $("p").append(x);
+                document.getElementById("bel").value="";
+            });
+            $("#b5").click(function () {
+                x = document.getElementById("su").value
+                $("p").after(x);
+                document.getElementById("su").value="";
+            });
+        })
+    </script>
+    <br>
+    <p></p>
+    <input type="text" id="isi"><button id="b1">HTML</button><br>
+    <input type="text" id="seb"><button id="b2">before</button><br>
+    <input type="text" id="dep"><button id="b3">prepend</button><br>
+    <input type="text" id="bel"><button id="b4">append</button><br>
+    <input type="text" id="su"><button id="b5">after</button>
+</body>
+</html>
